@@ -11,21 +11,18 @@ function AddTask() {
     li.innerHTML = inputResult.value;
     ul.appendChild(li);
 
-    var edit = document.createElement("button");
-    edit.innerHTML = "EDIT";
-    edit.setAttribute("onClick", "edit(this)")
 
     var del = document.createElement("button");
     del.innerHTML = "DELETE";
     del.setAttribute("onClick", "del(this)")
 
-    li.appendChild(edit);
+    
     li.appendChild(del);
+
+    inputResult.value = ""
 }
 
-function edit(ed) {
-    console.log("ho gaya");
-}
-function del(el) {
-   el.parentNode.remove();
+function del(del){
+    
+    del.parentNode.remove()
 }

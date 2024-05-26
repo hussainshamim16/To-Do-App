@@ -24,6 +24,21 @@ body {
 
 
 }
+nav{
+    display: none;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    padding: 0px 20px;
+    /* width: min-content;   */
+    /* position: fixed; */
+}
+.icons{
+    margin-top: 5px;
+    padding: 10px;
+}
+.icons i{
+    font-size: 20px;
+}
 
 h1 {
     text-align: center;
@@ -76,7 +91,7 @@ i:hover {
 .child2 {
     background: var(--lightwhite);
     width: 70%;
-    height: 80vh;
+    height: auto;
     border-radius: 20px;
     margin: 30px 20px 0px 20px;
     padding: 20px;
@@ -161,3 +176,4 @@ i:hover {
     /* margin: auto 0px; */
 
 }
+
