@@ -1,5 +1,5 @@
 
-console.log("hello world");
+
 
 
 
@@ -7,16 +7,15 @@ function AddTask() {
     var inputResult = document.getElementById("todoInput");
     var ul = document.getElementById("listUl");
     var li = document.createElement("li")
-    var buttons = document.createElement("button")
-    ul.appendChild(li);
+  
     li.innerHTML = inputResult.value;
-    li.appendChild(buttons);
-    buttons.innerHTML = "edit"
+    ul.appendChild(li);
 
+    var edit = document.createElement("button");
+    edit.innerHTML = "EDIT";
+edit.setAttribute("onClick", "edit()")
 
-    inputResult.value = ""
-    console.log(inputResult.value);
 }
-function yaha() {
-    console.log("hellojskjl")
-}
+// function edit() {
+//     console.log("ho gaya")
+// }
