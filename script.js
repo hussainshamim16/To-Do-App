@@ -4,10 +4,14 @@
 
 
 function AddTask() {
+   
     var inputResult = document.getElementById("todoInput");
     var ul = document.getElementById("listUl");
     var li = document.createElement("li")
-
+    if(inputResult.value < 3){
+        alert("Enter A Correct Task");
+    return;
+    }
     li.innerHTML = inputResult.value;
     ul.appendChild(li);
 
@@ -19,7 +23,7 @@ function AddTask() {
     
     li.appendChild(del);
 
-    inputResult.value = ""
+    inputResult.value = "";
 }
 
 function del(del){

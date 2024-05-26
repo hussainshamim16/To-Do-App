@@ -25,8 +25,8 @@ body {
 
 }
 nav{
-    border: 1px solid red;
-    /* display: none; */
+    /* border: 1px solid red; */
+    display: none;
     justify-content: space-between;
     padding: 0px 20px;
 animation-name: rat;    
@@ -189,4 +189,8 @@ i:hover {
     /* margin: auto 0px; */
 
 }
+
+/* @media screen (max-width:500px) {
+    
+} */
 
