@@ -45,3 +45,22 @@ function hide(ele){
     ele.children
 console.log(ele)
 }
+
+function color(cal){
+    if(ten>nine){
+        var bod = document.getElementById("tady")
+        bod.style.background = "#fe4e6e"
+        bod.style.color = "white";
+
+        nine = 10
+        tan = 9
+    }else{
+        var bod = document.getElementById("tady")
+        bod.style.background = "#0a0a0a"
+        bod.style.color = "#f6c90e";
+        nine = 9
+        tan = 10
+    }
+
+
+}
