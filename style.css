@@ -25,13 +25,26 @@ body {
 
 }
 nav{
-    display: none;
     /* border: 1px solid red; */
+    display: none;
     justify-content: space-between;
     padding: 0px 20px;
-    /* width: min-content;   */
-    /* position: fixed; */
+animation-name: rat;    
+animation-duration: 2s;
+
+
 }
+@keyframes rat {
+    0%{
+       opacity: 0%;
+       margin-top: -70px;
+    }
+    100%{
+        opacity: 100%;
+        margin-top: 0px;
+    }
+}
+
 .icons{
     margin-top: 5px;
     padding: 10px;
@@ -78,7 +91,7 @@ i:hover {
 .child1 {
     background: var(--lightwhite);
     width: 7%;
-    height: 80vh;
+    height: 70vh;
     border-radius: 20px;
     margin: 30px 20px 0px 20px;
     padding: 8px;

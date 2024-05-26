@@ -26,3 +26,22 @@ function del(del){
     
     del.parentNode.remove()
 }
+var ten = 10;
+var nine = 9;
+
+function hide(ele){
+    
+    var nav = document.getElementById("nav");
+   
+    if(ten>nine){
+        nav.style.display = "flex";
+        ten=9
+        nine=10
+    }else{
+        nav.style.display = "none";
+        ten=10
+        nine=9
+    }
+    ele.children
+console.log(ele)
+}
