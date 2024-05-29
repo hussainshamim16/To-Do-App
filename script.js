@@ -65,13 +65,9 @@ console.log(ele)
 
 
 function edit(elem){
-    // var inputResult = document.getElementById("todoInput");
-    // var ul = document.getElementById("listUl");
-    // var li = document.createElement("li");
-    var set = prompt("Edit Value", elem.parentNode.parentNode.firstChild.innerHTML);
-    // elem.parentNode.parentNode.firstChild.innerHTML = set
-    // elem.innerHTML = set
-    console.log(elem.parentNode.parentNode.firstChild.innerHTML = set)
+    var set = prompt("Edit Value",  elem.parentNode.parentNode.firstChild.nodeValue);
+    elem.parentNode.parentNode.firstChild.nodeValue = set;
+    
 }
 
 function color(cal){
